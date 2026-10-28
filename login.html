@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login - BookHive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="content-body">
+
+    <div class="content-box">
+
+        <h2 class="page-title">
+            Welcome Back
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p class="description">
+            Login to your BookHive account.
+        </p>
+
+        <div class="form-container">
+
+            <form onsubmit="return validateLogin()">
+
+                <table class="form-table">
+
+                    <tr>
+                        <td class="form-label">
+                            Username
+                        </td>
+
+                        <td>
+                            <input
+                                type="text"
+                                id="username"
+                                class="form-input"
+                                placeholder="Enter username">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="form-label">
+                            Password
+                        </td>
+
+                        <td>
+                            <input
+                                type="password"
+                                id="password"
+                                class="form-input"
+                                placeholder="Enter password">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="button-row">
+
+                            <input
+                                type="submit"
+                                value="Login"
+                                class="primary-button">
+
+                            <input
+                                type="reset"
+                                value="Clear"
+                                class="secondary-button">
+
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script>
+        function validateLogin() {
+
+            let username =
+                document.getElementById("username").value.trim();
+
+            let password =
+                document.getElementById("password").value;
+
+            let namePattern = /^[A-Za-z ]{6,}$/;
+
+            if (!namePattern.test(username)) {
+                alert("Username must contain only alphabets and at least 6 characters.");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password must contain at least 6 characters.");
+                return false;
+            }
+
+            alert("Login form validated successfully!");
+            return false;
+        }
+    </script>
+
+</body>
+</html>

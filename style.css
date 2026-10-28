@@ -1,0 +1,383 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1e293b;
+    background-color: #f8f5ed;
+}
+
+
+/* =========================================
+   TOP FRAME
+   ========================================= */
+
+.top-body {
+    background-color: #0f172a;
+    color: white;
+}
+
+.top-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 32px;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f4c542;
+}
+
+.college-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.top-menu {
+    display: flex;
+    gap: 18px;
+}
+
+.top-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 4px;
+}
+
+.top-menu a:hover {
+    color: #f4c542;
+}
+
+
+/* =========================================
+   LEFT FRAME
+   ========================================= */
+
+.left-body {
+    background-color: #f4efe3;
+}
+
+.department-title {
+    background-color: #0f172a;
+    color: #f4c542;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.department-subtitle {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    margin: 12px 10px 20px;
+}
+
+.department-link {
+    display: block;
+    margin: 12px 15px;
+    padding: 14px 15px;
+    background-color: white;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    border-left: 4px solid #f4c542;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.08);
+}
+
+.department-link:hover {
+    background-color: #0f172a;
+    color: #f4c542;
+}
+
+
+/* =========================================
+   COMMON CONTENT
+   ========================================= */
+
+.content-body {
+    background-color: #f8f5ed;
+    padding: 35px;
+}
+
+.content-box {
+    max-width: 950px;
+    margin: auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+}
+
+.page-title {
+    color: #0f172a;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.gold-line {
+    width: 55px;
+    height: 4px;
+    background-color: #f4c542;
+    margin-bottom: 22px;
+}
+
+.description {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.highlight {
+    color: #b8860b;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HOME PAGE
+   ========================================= */
+
+.welcome-banner {
+    background-color: #0f172a;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.welcome-banner h1 {
+    margin: 0 0 10px;
+    color: #f4c542;
+    font-size: 30px;
+}
+
+.welcome-banner p {
+    margin: 0;
+    line-height: 1.7;
+    color: #e2e8f0;
+}
+
+.feature-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.feature-card {
+    flex: 1;
+    background-color: #f8f5ed;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border-top: 3px solid #f4c542;
+}
+
+.feature-card h3 {
+    margin: 8px 0;
+    color: #0f172a;
+}
+
+.feature-card p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+/* =========================================
+   FORMS
+   ========================================= */
+
+.form-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+.form-table td {
+    padding: 5px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #334155;
+    width: 40%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-input:focus {
+    border-color: #f4c542;
+    outline: none;
+}
+
+.button-row {
+    text-align: center;
+    padding-top: 15px !important;
+}
+
+.primary-button {
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.primary-button:hover {
+    background-color: #1e293b;
+}
+
+.secondary-button {
+    background-color: #f4c542;
+    color: #0f172a;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 4px;
+}
+
+
+/* =========================================
+   CATALOGUE TABLES
+   ========================================= */
+
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.book-table th {
+    background-color: #0f172a;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.book-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.book-table tr:nth-child(even) {
+    background-color: #faf8f2;
+}
+
+.book-table tr:hover {
+    background-color: #fff8dc;
+}
+
+.price {
+    color: #b8860b;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CART
+   ========================================= */
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.cart-table th {
+    background-color: #0f172a;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+.cart-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.total-row {
+    background-color: #f4efe3;
+    font-weight: bold;
+}
+
+.total-price {
+    color: #b8860b;
+    font-size: 18px;
+}
+
+
+/* =========================================
+   DEPARTMENT PAGE
+   ========================================= */
+
+.department-header {
+    background-color: #0f172a;
+    color: white;
+    padding: 22px;
+    border-radius: 8px;
+}
+
+.department-header h1 {
+    margin: 0;
+    color: #f4c542;
+}
+
+.department-header p {
+    margin: 8px 0 0;
+    color: #cbd5e1;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 13px;
+}

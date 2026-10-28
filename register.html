@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookHive - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="content-body">
+
+<div class="content-box">
+    <h2 class="page-title">Create an Account</h2>
+    <div class="gold-line"></div>
+
+    <p class="description">
+        Enter your details to register with BookHive.
+    </p>
+
+    <div class="form-container">
+        <form onsubmit="return validateForm()">
+
+            <table class="form-table">
+
+                <tr>
+                    <td class="form-label">Name</td>
+                    <td>
+                        <input type="text" id="name"
+                               class="form-input">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="form-label">Password</td>
+                    <td>
+                        <input type="password" id="password"
+                               class="form-input">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="form-label">E-mail ID</td>
+                    <td>
+                        <input type="text" id="email"
+                               class="form-input">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="form-label">Phone Number</td>
+                    <td>
+                        <input type="text" id="phone"
+                               class="form-input">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="form-label">Sex</td>
+                    <td>
+                        <input type="radio" name="sex" value="Male">
+                        Male
+                        <input type="radio" name="sex" value="Female">
+                        Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="form-label">Date of Birth</td>
+                    <td>
+                        <select id="day">
+                            <option value="">Day</option>
+                            <script>
+                                for (let i = 1; i <= 31; i++) {
+                                    document.write(
+                                        "<option value='" + i + "'>" + i + "</option>"
+                                    );
+                                }
+                            </script>
+                        </select>
+
+                        <select id="month">
+                            <option value="">Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+
+                        <select id="year">
+                            <option value="">Year</option>
+                            <script>
+                                for (let i = 2012; i >= 1950; i--) {
+                                    document.write(
+                                        "<option value='" + i + "'>" + i + "</option>"
+                                    );
+                                }
+                            </script>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="form-label">Languages Known</td>
+                    <td>
+                        <input type="checkbox" name="language" value="English">
+                        English<br>
+                        <input type="checkbox" name="language" value="Telugu">
+                        Telugu<br>
+                        <input type="checkbox" name="language" value="Hindi">
+                        Hindi<br>
+                        <input type="checkbox" name="language" value="Tamil">
+                        Tamil
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="form-label">Address</td>
+                    <td>
+                        <textarea id="address" rows="4"
+                                  class="form-input"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="button-row">
+                        <input type="submit" value="Register"
+                               class="primary-button">
+                        <input type="reset" value="Clear"
+                               class="secondary-button">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</div>
+
+<script>
+function validateForm() {
+    let name = document.getElementById("name").value.trim();
+    let password = document.getElementById("password").value;
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+
+    let namePattern = /^[A-Za-z ]{6,}$/;
+    let emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+    let phonePattern = /^[0-9]{10}$/;
+
+    if (!namePattern.test(name)) {
+        alert("Name must contain only alphabets and be at least 6 characters long.");
+        return false;
+    }
+
+    if (password.length < 6) {
+        alert("Password must contain at least 6 characters.");
+        return false;
+    }
+
+    if (!emailPattern.test(email)) {
+        alert("Enter a valid email address, such as name@domain.com.");
+        return false;
+    }
+
+    if (!phonePattern.test(phone)) {
+        alert("Phone number must contain exactly 10 digits.");
+        return false;
+    }
+
+    alert("Registration form validated successfully!");
+    return false;
+}
+</script>
+
+</body>
+</html>

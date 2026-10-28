@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+
+<!DOCTYPE bookStore SYSTEM "books.dtd">
+
+<bookStore
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="books.xsd">
+
+    <book>
+        <title>Data Structures and Algorithms</title>
+        <author>Mark Allen Weiss</author>
+        <isbn>9780132847377</isbn>
+        <publisher>Pearson</publisher>
+        <edition>2</edition>
+        <price>650.00</price>
+    </book>
+
+    <book>
+        <title>Database System Concepts</title>
+        <author>Abraham Silberschatz</author>
+        <isbn>9780078022159</isbn>
+        <publisher>McGraw Hill</publisher>
+        <edition>7</edition>
+        <price>750.00</price>
+    </book>
+
+    <book>
+        <title>Operating System Concepts</title>
+        <author>Abraham Silberschatz</author>
+        <isbn>9781119800361</isbn>
+        <publisher>Wiley</publisher>
+        <edition>10</edition>
+        <price>850.00</price>
+    </book>
+
+    <book>
+        <title>Programming in ANSI C</title>
+        <author>E Balagurusamy</author>
+        <isbn>9789352607999</isbn>
+        <publisher>McGraw Hill</publisher>
+        <edition>8</edition>
+        <price>500.00</price>
+    </book>
+
+</bookStore>
